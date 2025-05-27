@@ -1,5 +1,68 @@
 @import 'tailwindcss';
 
+/* Tailwind v4 CSS-first configuration */
+@theme {
+  --color-buff: #ecba82;
+  --color-buff-100: #40270a;
+  --color-buff-200: #804d13;
+  --color-buff-300: #c0741d;
+  --color-buff-400: #e39843;
+  --color-buff-500: #ecba82;
+  --color-buff-600: #f0c99c;
+  --color-buff-700: #f4d6b4;
+  --color-buff-800: #f8e4cd;
+  --color-buff-900: #fbf1e6;
+
+  --color-steel-blue: #4f7cac;
+  --color-steel-blue-100: #101922;
+  --color-steel-blue-200: #1f3144;
+  --color-steel-blue-300: #2f4a67;
+  --color-steel-blue-400: #3f6389;
+  --color-steel-blue-500: #4f7cac;
+  --color-steel-blue-600: #7096bd;
+  --color-steel-blue-700: #94b0ce;
+  --color-steel-blue-800: #b8cade;
+  --color-steel-blue-900: #dbe5ef;
+
+  --color-chestnut: #a24936;
+  --color-chestnut-100: #200f0b;
+  --color-chestnut-200: #401d15;
+  --color-chestnut-300: #602c20;
+  --color-chestnut-400: #813b2b;
+  --color-chestnut-500: #a24936;
+  --color-chestnut-600: #c4634e;
+  --color-chestnut-700: #d38a7a;
+  --color-chestnut-800: #e1b1a6;
+  --color-chestnut-900: #f0d8d3;
+
+  --color-gunmetal: #22333b;
+  --color-gunmetal-100: #070a0c;
+  --color-gunmetal-200: #0d1417;
+  --color-gunmetal-300: #141e23;
+  --color-gunmetal-400: #1b282f;
+  --color-gunmetal-500: #22333b;
+  --color-gunmetal-600: #40606f;
+  --color-gunmetal-700: #608ea3;
+  --color-gunmetal-800: #95b4c2;
+  --color-gunmetal-900: #cad9e0;
+
+  --color-raisin-black: #272727;
+  --color-raisin-black-100: #080808;
+  --color-raisin-black-200: #0f0f0f;
+  --color-raisin-black-300: #171717;
+  --color-raisin-black-400: #1f1f1f;
+  --color-raisin-black-500: #272727;
+  --color-raisin-black-600: #525252;
+  --color-raisin-black-700: #7d7d7d;
+  --color-raisin-black-800: #a8a8a8;
+  --color-raisin-black-900: #d4d4d4;
+
+  --font-family-mono: 'JetBrains Mono', monospace;
+
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-glow: glow 2s ease-in-out infinite alternate;
+}
+
 /*
   The default border color has changed to `currentcolor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still
@@ -9,16 +72,80 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
-  *,
+  *:not(canvas),
   ::after,
   ::before,
   ::backdrop,
   ::file-selector-button {
     border-color: var(--color-gray-200, currentcolor);
   }
+
+  /* Ensure canvas elements render properly */
+  canvas {
+    display: block !important;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: linear-gradient(135deg, #080808 0%, #0d1417 50%, #0f0f0f 100%);
+    min-height: 100vh;
+  }
+
+  /* Custom scrollbar for webkit browsers */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(34, 51, 59, 0.1);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(79, 124, 172, 0.3);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(79, 124, 172, 0.5);
+  }
 }
 
+/* Typography */
 p {
-    font-size: large;
-    font-weight: 300;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+/* Animations */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(79, 124, 172, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(79, 124, 172, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(79, 124, 172, 0.3);
+  }
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(34, 51, 59, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(79, 124, 172, 0.2);
 }
