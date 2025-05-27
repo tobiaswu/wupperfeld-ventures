@@ -65,7 +65,7 @@ export function XIcon({
 }
 
 // Email Icon (keeping from Lucide as it's not a brand icon)
-export function MailIcon({ className = 'w-6 h-6' }: { className?: string }) {
+export function MailIcon({ className = 'w-6 h-6' }: Pick<IconProps, 'className'>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

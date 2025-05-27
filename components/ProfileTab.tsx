@@ -34,30 +34,36 @@ const ProfileTab = () => (
         <Code className="w-6 h-6" />
         Tech Stack
       </h3>
-      <div className="space-y-3">
-        <div className="flex items-center gap-3">
-          <div className="w-3 h-3 bg-steel-blue-400 rounded-full animate-pulse"></div>
+      <ul className="space-y-3">
+        <li className="flex items-center gap-3">
+          <div className="w-3 h-3 flex-shrink-0 bg-steel-blue-400 rounded-full animate-pulse"></div>
           <span className="text-steel-blue-600">
             TypeScript / React Ecosystem
           </span>
-        </div>
-        <div className="flex items-center gap-3">
-          <div className="w-3 h-3 bg-steel-blue-400 rounded-full animate-pulse"></div>
+        </li>
+        <li className="flex items-center gap-3">
+          <div className="w-3 h-3 flex-shrink-0 bg-steel-blue-400 rounded-full animate-pulse"></div>
           <span className="text-steel-blue-600">Python Ecosystem</span>
-        </div>
-        <div className="flex items-center gap-3">
-          <div className="w-3 h-3 bg-steel-blue-400 rounded-full animate-pulse"></div>
+        </li>
+        <li className="flex items-center gap-3">
+          <div className="w-3 h-3 flex-shrink-0 bg-steel-blue-400 rounded-full animate-pulse"></div>
           <span className="text-steel-blue-600">
             Agent Frameworks (OpenAI Agents SDK / CrewAI / LangGraph)
           </span>
-        </div>
-        <div className="flex items-center gap-3">
-          <div className="w-3 h-3 bg-steel-blue-400 rounded-full animate-pulse"></div>
+        </li>
+        <li className="flex items-center gap-3">
+          <div className="w-3 h-3 flex-shrink-0 bg-steel-blue-400 rounded-full animate-pulse"></div>
           <span className="text-steel-blue-600">
             Cursor / AI Development Tools
           </span>
-        </div>
-      </div>
+        </li>
+        <li className="flex items-center gap-3">
+          <div className="w-3 h-3 flex-shrink-0 bg-steel-blue-400 rounded-full animate-pulse"></div>
+          <span className="text-steel-blue-600">
+            And whatever tool gets the job done right
+          </span>
+        </li>
+      </ul>
     </motion.div>
   </div>
 );

@@ -70,7 +70,7 @@ function Stars(props: any) {
     }
     // Twinkle: animate star sizes
     if (ref.current) {
-      const sizes = (ref.current.geometry as any).attributes.size;
+      const sizes = (ref.current.geometry as any).attributes.sizes;
       if (sizes) {
         const time = state.clock.getElapsedTime();
         for (let i = 0; i < 5000; i++) {
@@ -98,6 +98,7 @@ function Stars(props: any) {
         positions={sphere}
         stride={3}
         frustumCulled={false}
+        sizes={sizes}
         {...props}
       >
         <PointMaterial
