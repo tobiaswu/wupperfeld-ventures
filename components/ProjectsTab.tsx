@@ -6,15 +6,15 @@ const projects = [
   {
     name: 'MadeByAgents.com',
     description:
-      'AI-powered solutions agency specializing in strategic consulting and agentic workflows',
+      'AI-powered solutions agency specializing in rapid software development, strategic consulting, and agentic workflows',
     url: 'https://madebyagents.com',
     icon: <Rocket className="w-6 h-6" />,
   },
   {
-    name: 'Agents Made Simple',
+    name: 'The Agent Roundup',
     description:
-      'Weekly AI agent newsletter with tutorials and use cases, delivered every Tuesday',
-    url: 'https://news.madebyagents.com/subscribe',
+      'Weekly newsletter with the latest AI agent news, tools, and tutorials for builders and innovators',
+    url: 'https://agentroundup.com/subscribe',
     icon: <Zap className="w-6 h-6" />,
   },
 ];
