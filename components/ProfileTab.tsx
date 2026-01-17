@@ -13,14 +13,22 @@ const ProfileTab = () => (
         About Me
       </h3>
       <p className="text-steel-blue-600 leading-relaxed mb-4">
-        Hi, I&apos;m Tobias – an ambitious software engineer from Germany and
-        founder of MadeByAgents. I help businesses unlock growth and efficiency
-        through AI-powered solutions.
+        I&apos;m Tobias – founder of{' '}
+        <span className="text-buff-400 font-semibold">Made By Agents</span> and
+        Head of AI Research at JAN3. I help startups and scaling companies ship
+        production-ready software 10× faster using AI agents and modern development
+        practices.
+      </p>
+      <p className="text-steel-blue-600 leading-relaxed mb-4">
+        My approach isn&apos;t just about adding AI features – it&apos;s about
+        fundamentally transforming how your team builds software. From strategic
+        roadmaps to hands-on development with coding agents, I deliver clean,
+        maintainable code that scales.
       </p>
       <p className="text-steel-blue-600 leading-relaxed">
-        I specialize in strategic AI consulting, agentic workflows, enterprise
-        software development, and business process automation for 7-figure (or
-        scaling) businesses looking to streamline operations.
+        Whether you need to launch an MVP fast, automate repetitive workflows, or
+        upskill your engineering team for the AI era – I&apos;m the partner who
+        bridges deep technical execution with strategic thinking.
       </p>
     </motion.div>
 
@@ -38,29 +46,31 @@ const ProfileTab = () => (
         <li className="flex items-center gap-3">
           <div className="w-3 h-3 flex-shrink-0 bg-steel-blue-400 rounded-full animate-pulse"></div>
           <span className="text-steel-blue-600">
-            TypeScript / React Ecosystem
-          </span>
-        </li>
-        <li className="flex items-center gap-3">
-          <div className="w-3 h-3 flex-shrink-0 bg-steel-blue-400 rounded-full animate-pulse"></div>
-          <span className="text-steel-blue-600">Python Ecosystem</span>
-        </li>
-        <li className="flex items-center gap-3">
-          <div className="w-3 h-3 flex-shrink-0 bg-steel-blue-400 rounded-full animate-pulse"></div>
-          <span className="text-steel-blue-600">
-            Agent Frameworks (OpenAI Agents SDK / CrewAI / LangGraph)
+            <span className="text-steel-blue-400">Frontend:</span> Next.js, React, Vite, Tailwind
           </span>
         </li>
         <li className="flex items-center gap-3">
           <div className="w-3 h-3 flex-shrink-0 bg-steel-blue-400 rounded-full animate-pulse"></div>
           <span className="text-steel-blue-600">
-            Cursor / AI Development Tools
+            <span className="text-steel-blue-400">Backend:</span> FastAPI, Fastify, Node.js
           </span>
         </li>
         <li className="flex items-center gap-3">
           <div className="w-3 h-3 flex-shrink-0 bg-steel-blue-400 rounded-full animate-pulse"></div>
           <span className="text-steel-blue-600">
-            And whatever tool gets the job done right
+            <span className="text-steel-blue-400">AI Agents:</span> OpenAI SDK, CrewAI, LangGraph
+          </span>
+        </li>
+        <li className="flex items-center gap-3">
+          <div className="w-3 h-3 flex-shrink-0 bg-steel-blue-400 rounded-full animate-pulse"></div>
+          <span className="text-steel-blue-600">
+            <span className="text-steel-blue-400">Dev Tools:</span> Cursor, Claude, Codex
+          </span>
+        </li>
+        <li className="flex items-center gap-3">
+          <div className="w-3 h-3 flex-shrink-0 bg-buff-400 rounded-full animate-pulse"></div>
+          <span className="text-buff-400 font-medium">
+            + whatever gets the job done
           </span>
         </li>
       </ul>

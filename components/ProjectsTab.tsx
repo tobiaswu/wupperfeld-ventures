@@ -1,22 +1,29 @@
 import { motion } from 'framer-motion';
-import { Rocket, Zap, ExternalLink } from 'lucide-react';
+import { Rocket, Zap, ExternalLink, Bitcoin } from 'lucide-react';
 import Link from 'next/link';
 
 const projects = [
   {
     name: 'MadeByAgents.com',
     description:
-      'AI-powered solutions agency specializing in rapid software development, strategic consulting, and agentic workflows',
+      'AI-powered solutions agency specializing in rapid software development, strategic consulting, and agentic workflows.',
     url: 'https://madebyagents.com',
     icon: <Rocket className="w-6 h-6" />,
   },
   {
     name: 'The Agent Roundup',
     description:
-      'Weekly newsletter with the latest AI agent news, tools, and tutorials for builders and innovators',
+      'Weekly notes on AI-driven software development: coding agents, workflows, and tools we actually use.',
     url: 'https://agentroundup.com/subscribe',
     icon: <Zap className="w-6 h-6" />,
   },
+  {
+    name: 'JAN3 – Head of AI Research',
+    description:
+      'Leading A1 Lab at JAN3, building AI-powered tools and workflows for the Bitcoin ecosystem. Driving R&D initiatives that bridge cutting-edge AI with sovereign technology.',
+    url: 'https://jan3.com',
+    icon: <Bitcoin className="w-6 h-6" />,
+  }
 ];
 
 const ProjectsTab = () => (

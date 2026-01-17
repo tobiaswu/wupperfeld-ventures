@@ -31,7 +31,7 @@ const socialLinks = [
 const ContactTab = () => (
   <div className="text-center space-y-8">
     <h3 className="text-3xl font-bold text-buff-400 mb-8">
-      Let&apos;s Connect
+      Let&apos;s Build Something Great
     </h3>
 
     <motion.div
@@ -39,9 +39,12 @@ const ContactTab = () => (
       animate={{ opacity: 1, y: 0 }}
       className="bg-gunmetal-400/20 backdrop-blur-sm border border-steel-blue-600/30 rounded-xl p-8"
     >
-      <p className="text-xl text-steel-blue-600 mb-8">
-        Ready to supercharge your business with AI? Let&apos;s discuss your next
-        big idea.
+      <p className="text-xl text-steel-blue-600 mb-4">
+        Ready to ship faster with AI-powered development?
+      </p>
+      <p className="text-steel-blue-600 mb-8">
+        Book a free 30-minute discovery call. I&apos;ll audit your current workflow
+        and show you exactly where AI agents can cut your development time in half.
       </p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

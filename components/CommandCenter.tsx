@@ -66,7 +66,7 @@ export function CommandCenter() {
             WUPPERFELD VENTURES
           </h1>
           <p className="text-lg text-steel-blue-600 font-mono">
-            Tobias Wupperfeld • Software Engineer & AI Developer
+            Tobias Wupperfeld • Ship 10× Faster with AI-Powered Development
           </p>
         </motion.div>
 
