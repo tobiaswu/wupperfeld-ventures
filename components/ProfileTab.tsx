@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
-import Image from "next/image";
-import { Brain, Code } from "lucide-react";
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { Brain, Code } from 'lucide-react';
 
 const ProfileTab = () => (
   <div className="grid md:grid-cols-2 gap-8">
@@ -14,7 +14,7 @@ const ProfileTab = () => (
         About Me
       </h3>
       <p className="text-steel-blue-600 leading-relaxed mb-4">
-        I&apos;m Tobias – founder of{" "}
+        I&apos;m Tobias – founder of{' '}
         <span className="text-buff-400 font-semibold">Made By Agents</span> and
         Head of AI Research at JAN3. I help startups and scaling companies ship
         production-ready software 10× faster using AI agents and modern
@@ -64,29 +64,29 @@ const ProfileTab = () => (
           <li className="flex items-center gap-3">
             <div className="w-3 h-3 flex-shrink-0 bg-steel-blue-400 rounded-full animate-pulse"></div>
             <span className="text-steel-blue-600">
-              <span className="text-steel-blue-400">Frontend:</span> Next.js,
-              React, Vite, Tailwind
+              <span className="text-steel-blue-400">Frontend:</span> React,
+              TypeScript, Next.js
             </span>
           </li>
           <li className="flex items-center gap-3">
             <div className="w-3 h-3 flex-shrink-0 bg-steel-blue-400 rounded-full animate-pulse"></div>
             <span className="text-steel-blue-600">
-              <span className="text-steel-blue-400">Backend:</span> FastAPI,
-              Fastify, Node.js
+              <span className="text-steel-blue-400">Backend:</span> Python,
+              TypeScript, Node.js
             </span>
           </li>
           <li className="flex items-center gap-3">
             <div className="w-3 h-3 flex-shrink-0 bg-steel-blue-400 rounded-full animate-pulse"></div>
             <span className="text-steel-blue-600">
-              <span className="text-steel-blue-400">AI Agents:</span> OpenAI
-              SDK, CrewAI, LangGraph
+              <span className="text-steel-blue-400">AI Agents:</span> OpenSource
+              LLMs, RAG, Vector Databases, Agentic Frameworks
             </span>
           </li>
           <li className="flex items-center gap-3">
             <div className="w-3 h-3 flex-shrink-0 bg-steel-blue-400 rounded-full animate-pulse"></div>
             <span className="text-steel-blue-600">
-              <span className="text-steel-blue-400">Dev Tools:</span> Cursor,
-              Claude, Codex
+              <span className="text-steel-blue-400">Dev Tools:</span> Claude
+              Code, Cursor
             </span>
           </li>
           <li className="flex items-center gap-3">
